@@ -23,6 +23,7 @@ public class Run {
             case 1: sort = new BubbleSort(arr); break;
             case 2: sort = new SelectionSort(arr); break;
             case 3: sort = new DirectInsertionSort(arr); break;
+            case 4: sort = new ShellSort(arr); break;
         }
         sort.coreSort();
         System.out.println("Sorted:");

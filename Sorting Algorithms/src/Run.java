@@ -25,6 +25,7 @@ public class Run {
             case 3: sort = new DirectInsertionSort(arr); break;
             case 4: sort = new ShellSort(arr); break;
             case 5: sort = new MergeSort(arr); break;
+            case 6: sort = new QuickSort(arr); break;
         }
         sort.coreSort();
         System.out.println("Sorted:");

@@ -29,6 +29,7 @@ public class Run {
             case 7: sort = new HeapSort(arr); break;
             case 8: sort = new CountingSort(arr); break;
             case 9: sort = new BucketSort(arr); break;
+            case 10: sort = new RadixSort(arr); break;
         }
         sort.coreSort();
         System.out.println("Sorted:");

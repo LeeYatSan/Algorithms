@@ -27,6 +27,7 @@ public class Run {
             case 5: sort = new MergeSort(arr); break;
             case 6: sort = new QuickSort(arr); break;
             case 7: sort = new HeapSort(arr); break;
+            case 8: sort = new CountingSort(arr); break;
         }
         sort.coreSort();
         System.out.println("Sorted:");

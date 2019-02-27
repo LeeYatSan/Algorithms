@@ -53,26 +53,39 @@
 //}
 
 
-//Solution3
+////Solution3
+//class Solution {
+//    public int majorityElement(int[] nums) {
+//        if(nums.length == 0)
+//            return 0;
+//        else {
+//            int count = 1;
+//            int res = nums[0];
+//            for(int num : nums){
+//                if(num == res)
+//                    ++count;
+//                else {
+//                    --count;
+//                    if(count == 0){
+//                        count = 1;
+//                        res = num;
+//                    }
+//                }
+//            }
+//            return res;
+//        }
+//    }
+//}
+
+//Solution4
+import java.util.Arrays;
 class Solution {
     public int majorityElement(int[] nums) {
         if(nums.length == 0)
             return 0;
         else {
-            int count = 1;
-            int res = nums[0];
-            for(int num : nums){
-                if(num == res)
-                    ++count;
-                else {
-                    --count;
-                    if(count == 0){
-                        count = 1;
-                        res = num;
-                    }
-                }
-            }
-            return res;
+            Arrays.sort(nums);
+            return nums[nums.length/2];
         }
     }
 }

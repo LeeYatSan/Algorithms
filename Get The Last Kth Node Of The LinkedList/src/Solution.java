@@ -1,16 +1,4 @@
 
-/*
-public class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}*/
-
-import java.util.ArrayList;
-
 ////Solution1
 //public class Solution {
 //    public ListNode FindKthToTail(ListNode head,int k) {

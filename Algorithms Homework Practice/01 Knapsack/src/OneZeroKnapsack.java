@@ -19,8 +19,8 @@ public class OneZeroKnapsack {
         this.num = value.length;
         this.valPerWeight = new double[num];
         this.profit = new int[num+1][capacity+1];
-        Arrays.sort(weight);
-        Arrays.sort(value);
+//        Arrays.sort(weight);
+//        Arrays.sort(value);
         Arrays.copyOf(weight, weight.length+1);
         Arrays.copyOf(value, value.length+1);
         for(int i = 0; i < num; ++i){
@@ -49,11 +49,11 @@ public class OneZeroKnapsack {
                 }
             }
         }
-//        for(int i = 0; i < num; i++) {
-//            for(int j = 0; j <= capacity; j++)
-//                System.out.print(profit[i][j] + " ");
-//            System.out.println();
-//        }
+        for(int i = 0; i < num; i++) {
+            for(int j = 0; j <= capacity; j++)
+                System.out.print(profit[i][j] + " ");
+            System.out.println();
+        }
         System.out.println("Max Profit: " + profit[num-1][capacity]);
 
 
